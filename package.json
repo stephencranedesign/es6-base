@@ -1,0 +1,21 @@
+{
+  "name": "one-page-site",
+  "version": "0.0.3",
+  "description": "base starting point for an es6 project",
+  "scripts": {
+    "watch": "node build-scripts/watch-files"
+  },
+  "author": "Stephen Crane",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "rollup": "^0.34.1",
+    "wr": "^1.3.1"
+  },
+  "dependencies": {
+    "node-sass": "^3.8.0",
+    "uglify-js": "^2.7.0"
+  }
+}
