@@ -1,9 +1,15 @@
-import { Calculator } from './Calc';
+import { Student } from '../classes/Student';
+import { Calculator } from '../classes/Calc';
 
-var calc = new Calculator('test');
-
-function add(a: number, b: number) {
-    return calc.add(a, b);
+interface Person {
+    firstName: string;
+    lastName: string;
 }
 
-console.log('from type-script.js: ', add(2, 3));
+function greeter(person : Person) {
+    return "Hello, " + person.firstName + " " + person.lastName;
+}
+
+var user = new Student("Jane", "M.", "User");
+
+console.log('from type-script.js: ', greeter(user));

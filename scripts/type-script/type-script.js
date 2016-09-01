@@ -1,6 +1,6 @@
-import { Calculator } from './Calc';
-var calc = new Calculator('test');
-function add(a, b) {
-    return calc.add(a, b);
+import { Student } from '../classes/Student';
+function greeter(person) {
+    return "Hello, " + person.firstName + " " + person.lastName;
 }
-console.log('from type-script.js: ', add(2, 3));
+var user = new Student("Jane", "M.", "User");
+console.log('from type-script.js: ', greeter(user));

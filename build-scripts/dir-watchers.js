@@ -107,6 +107,9 @@ class JsDirWatcher extends DirWatcher {
 	}
 }
 
+/*
+
+*/
 class TypeScriptDirWatcher extends JsDirWatcher {
 	constructor(config) {
 		super(config);

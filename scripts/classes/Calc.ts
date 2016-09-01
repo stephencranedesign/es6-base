@@ -1,4 +1,4 @@
-class Calculator {
+export class Calculator {
 	name: string;
 	constructor(name) {
 		this.name = name;
@@ -20,5 +20,3 @@ class Calculator {
 		return a/b
 	}
 }
-
-export default Calculator;

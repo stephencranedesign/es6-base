@@ -1,4 +1,4 @@
-// const TypeScriptDirWatcher = require('./dir-watchers').TypeScriptDirWatcher;
+const TypeScriptDirWatcher = require('./dir-watchers').TypeScriptDirWatcher;
 const JsDirWatcher = require('./dir-watchers').JsDirWatcher;
 const DirWatcher = require('./dir-watchers').DirWatcher;
 const ScssDirWatcher = require('./dir-watchers').ScssDirWatcher;
@@ -13,12 +13,12 @@ new JsDirWatcher({
 	watch: true
 });
 
-// new TypeScriptDirWatcher({
-// 	srcDir: '/scripts/type-script',
-// 	buildDir: '/scripts/type-script/min',
-// 	rootDir: rootDir,
-// 	watch: true
-// });
+new TypeScriptDirWatcher({
+	srcDir: '/scripts/type-script',
+	buildDir: '/scripts/type-script/min',
+	rootDir: rootDir,
+	watch: true
+});
 
 // new ScssDirWatcher({
 // 	srcDir: '/css',
